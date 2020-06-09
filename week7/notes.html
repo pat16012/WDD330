@@ -8,8 +8,44 @@
 <h1>Week 7 Notes</h1>
 <p>CH11: Further Functions</p>
 <p></p><br>
+.description proper can be added to a function and explain what it does. <br>
+To use temporary variables use 'temp'. <br>
+Don't fall into Callback Hell! <br>
+Use Promises for future results. It will be resolved or rejected. <br>
+Create new promise const promise = new promise((resolve, reject) => { <br>
+if(success) { <br>
+resolve(value); <br>
+} else { <br>
+reject(error); <br>
+} <br>
+}); <br>
+Promises can be chained together. <br>
+<br>
+Async Functions: <br>
+used with async keyword, allows to write asynchronose code as if it was synchronous. <br>
+achieved by using the await operator before the asynchronous function. <br>
+Functions can return functions. <br>
+
+Closures: <br>
+outer() function can only access its variables. <br>
+inner() functions can access its variables but also the variables from the outer(). <br>
+
+
 <p>CH13: AJAX</p>
-<p></p><br>
+<p>AJAX allows the JavaScript to request resources from the server for the client <br>
+fetch() method only has one argument the URL of the resource needed. <br>
+    use fetch() to send a request and then get a response <br>
+    redirect() can be used to redirect to another URL. <br>
+    text() takes text from the response and returns a promised resolved as a string in JS. <br>
+    blob() is used to read a file with raw data and return a blob object. <br>
+    json() Json is the most common AJAX response. used to transform JSON data into a JS object. <br>
+    <br>
+    Get request to retrieve resources <br>
+    POST can perform any task <br>
+    PUT request ti upsert, to insert a resource or update it entirely <br>
+    PATCH request makes partial updates to a resource <br>
+    DELETE requests to delete resources
+</p><br>
 
 </body>
 </html>
