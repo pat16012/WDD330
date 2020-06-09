@@ -7,10 +7,72 @@
 <body>
 <h1>Week 4 Notes</h1>
 <p>CH8: Forms</p>
-<p></p><br>
+<p>Reset Buttons are considered poor for usability, as they are too easy to erase <br>
+the entire form. <br>
+form.action = '/an/other.url' used to set the form action attribute so its sent to a <br>
+different url. <br>
+Pulling user values from form ${input.value} in JS script <br>
+    placeholder = 'enterSomething here' used to have some information in the form input box before the user enters something
+    <br>
+    HTML5 .focus() in JS focuses on the element once the page loads. <br>
+    Form Validation: <br>
+    Used to make sure the user enters the requested Data in the Form you wanted.
+    HTML5 has an API for basic validation. Custom validation might be required for your purposes.
+</p><br>
+
 <p>CH12: Object Oriented Programming</p>
-<p></p><br>
+<p>Constructor can be used to create new object using the new operator<br>
+    Private methods can only be access from within the object. <br>
+    public methods can be access from outside the object. <br>
+    getters and setters can be used to access the data from private methods. <br>
+    Inheritance can be used in JS objects <br>
+    Mixins allow adding properties and methods from one object to another without inheritance. <br>
+    Factory Functions can be used with copy(enter object here) to have a function return an object. <br>
+    Chaining functions: superman.fly().move().xray(); with call all the specified functions. <br>
+    ES6 arrow functions do not have their over .this context, .this remains bound to the original object. <br>
+ES6 allows for Modules to be used <br>
+    use import {} from './your.js' to import another JS file. <br>
+    use export {function1, function2} to export your functions. <br>
+    import {function1, function2} from './yourJSfile'; to import specific functions from another JS file. <br>
+    import * as nameThis from './yourJSfile'; imports all values and functions from the JS file.
+    nameThis.function({2,6,10}); allows you to put in your of vales into the functions with the namespace of nameThis
+    <br>
+    single/multiple functions and values can be exported.
+    objects can also be exported. <br>
+    Do not have more than one default export, the result would be a syntax error. <br>
+    MVC: <br>
+    models: objects the implement functionality for creating,reading,updating and deleting (known as CRUD tasks). <br>
+    Views: provide visual representation of the model showing all the relevant information. In web app this would be
+    <br>
+    the HTML displayed on the web page. <br>
+    Controllers: link models and views together by communicating between them. Controllers respond to events, process the data
+    <br>
+    and update the model and view. <br>
+    MV* with JS rather than MVC since JS does not strictly follow the controller pattern. <br>
+    MV* Frameworks: <br>
+    Aurelia which uses ES6 <br>
+    Angular - created by google. Uses ng- attributes. <br>
+    Vue - open source framework that takes the best of React & Angular <br>
+    Templates: MVC frameworks use templating to insert dynamic data into the pages. <br>
+    <h1> Hello {{ name }}</h1> uses templating to insert a name. Some frameworks use handlebars {{}}, <br>
+EJS uses <%= name => <br>
+
+
+</p><br>
+
 <p>CH:15 Modern Javascript</p>
-<p></p><br>
+<p>
+    Libraries: makes life easier and more exciting! <br>
+    jQuery is the most popular JavaScript library. <br>
+    jQuery works with older browsers. Since we are in the future people can use a newer and more secure browser. <br>
+    Libraries can speed things up a lot, but you also do not know all the code contained inside unless you go <br>
+    and look through it. <br>
+    React from Facebook & Vue use virtual DOM's to speed up page loading. <br>
+    Web Apps are becoming large and to keep them organized having a proper file system goes a long way to have <br>
+    clean easy to read and de-dug code. <br>
+The use of libraries and packages have sped up the process of making dynamic pages.
+
+</p><br>
+
 </body>
 </html>
